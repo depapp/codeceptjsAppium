@@ -25,6 +25,9 @@
   "teardown": null,
   "hooks": [],
   "gherkin": {},
+  "plugins": {
+    "allure": {} 
+  },
   "tests": "./*_test.js",
   "name": "CCMonitoringAnalytic"
 }
