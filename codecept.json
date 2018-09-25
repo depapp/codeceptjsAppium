@@ -1,28 +1,30 @@
 {
-   "tests":"./*_test.js",
-   "output":"./output",
-   "helpers":{
-      "Appium":{
-         "host":"localhost",
-         "port":"4723",
-         "platform":"Android",
-         "desiredCapabilities":{
-            "platformName":"Android",
-            "platformVersion":"5.0.0",
-            "deviceName":"Android Emulator",
-            "udid":"192.168.132.101:5555",
-            "app":"C:\\Users\\user\\codeceptjsAppium\\tax-analytics_300818.apk",
-            "appPackage":"",
-            "autoGrantPermissions":"true"
-         }
+  "output": "./output",
+  "helpers": {
+    "Appium": {
+      "host": "localhost",
+      "port": "4723",
+      "platform": "Android",
+      "desiredCapabilities": {
+        "platformName": "Android",
+        "platformVersion": "7.1.1",
+        "deviceName": "Android Emulator",
+        "udid": "emulator-5554",
+        "app": "/Users/user/Downloads/tax.apk",
+        "appPackage": "",
+        "autoGrantPermissions": "true"
       }
-   },
-   "include":{
-      "I":"./steps_file.js"
-   },
-   "bootstrap":false,
-   "mocha":{
-
-   },
-   "name":"CCMonitoringAnalytic"
+    }
+  },
+  "include": {
+    "I": "./steps_file.js",
+    "loginPage": "./pages/login.js"
+  },
+  "mocha": {},
+  "bootstrap": false,
+  "teardown": null,
+  "hooks": [],
+  "gherkin": {},
+  "tests": "./*_test.js",
+  "name": "CCMonitoringAnalytic"
 }
