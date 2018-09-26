@@ -1,33 +1,41 @@
 {
-  "output": "./output",
-  "helpers": {
-    "Appium": {
-      "host": "localhost",
-      "port": "4723",
-      "platform": "Android",
-      "desiredCapabilities": {
-        "platformName": "Android",
-        "platformVersion": "7.1.1",
-        "deviceName": "Android Emulator",
-        "udid": "emulator-5554",
-        "app": "/Users/user/Downloads/tax.apk",
-        "appPackage": "",
-        "autoGrantPermissions": "true"
+   "output":"./output",
+   "helpers":{
+      "Appium":{
+         "host":"localhost",
+         "port":"4723",
+         "platform":"Android",
+         "desiredCapabilities":{
+            "platformName":"Android",
+            "platformVersion":"7.1.1",
+            "deviceName":"Android Emulator",
+            "udid":"emulator-5554",
+            "app":"/Users/user/Downloads/tax.apk",
+            "appPackage":"",
+            "autoGrantPermissions":"true"
+         }
       }
-    }
-  },
-  "include": {
-    "I": "./steps_file.js",
-    "loginPage": "./pages/login.js"
-  },
-  "mocha": {},
-  "bootstrap": false,
-  "teardown": null,
-  "hooks": [],
-  "gherkin": {},
-  "plugins": {
-    "allure": {} 
-  },
-  "tests": "./*_test.js",
-  "name": "CCMonitoringAnalytic"
+   },
+   "include":{
+      "I":"./steps_file.js",
+      "loginPage":"./pages/login.js"
+   },
+   "mocha":{
+
+   },
+   "bootstrap":false,
+   "teardown":null,
+   "hooks":[
+
+   ],
+   "gherkin":{
+
+   },
+   "plugins":{
+      "allure":{
+
+      }
+   },
+   "tests":"./*_test.js",
+   "name":"CCMonitoringAnalytic"
 }
